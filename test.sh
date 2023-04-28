@@ -5,4 +5,5 @@ for s in $(cat variables.json | jq -r "to_entries|map(\"\(.key)=\(.value|tostrin
     echo "hello"
     echo "there"
     echo "branch"
+	echo "Updated"
 done
