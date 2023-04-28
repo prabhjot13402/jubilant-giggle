@@ -4,4 +4,5 @@ for s in $(cat variables.json | jq -r "to_entries|map(\"\(.key)=\(.value|tostrin
     sed -i -e 's/'$s'/'$s'/g' .env
     echo "hello"
     echo "there"
+    echo "branch"
 done
